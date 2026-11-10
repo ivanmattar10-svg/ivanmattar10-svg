@@ -1,0 +1,147 @@
+/* ==========================================================
+   FEUILLE DE STYLE : elle décide de l'apparence de la page.
+   Principe : sélecteur { propriété: valeur; }
+   Exemple : h2 { color: red; } rend tous les titres h2 rouges.
+   ========================================================== */
+
+
+/* 1. LES COULEURS
+   On les écrit une seule fois ici. Ensuite on les réutilise avec var(...).
+   Pour changer le thème du site, il suffit de modifier ces lignes. */
+:root {
+  --nuit: #0f1b33;    /* bleu très foncé : textes et en-tête */
+  --corail: #f2573a;  /* orange : décorations */
+  --fond: #f5f6fb;    /* fond de la page */
+  --blanc: #ffffff;
+  --gris: #56617d;    /* textes secondaires */
+  --trait: #d9deea;   /* bordures des tableaux */
+  --lien: #b8321a;    /* liens */
+}
+
+
+/* 2. LA BASE DE LA PAGE */
+
+/* Fait en sorte que la largeur d'un bloc inclue ses marges intérieures */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1.05rem;     /* rem = taille relative à la taille de base */
+  line-height: 1.6;       /* espace entre les lignes */
+  color: var(--nuit);
+  background: var(--fond);
+}
+
+h1, h2, h3 { font-family: "Trebuchet MS", Arial, sans-serif; }
+
+a { color: var(--lien); }
+
+/* Les images ne dépassent jamais de l'écran */
+img { max-width: 100%; height: auto; }
+
+
+/* 3. L'EN-TÊTE ET LE MENU
+   display: flex place les éléments côte à côte.
+   flex-wrap: wrap les fait passer à la ligne si l'écran est trop petit
+   (c'est ce qui rend le site utilisable sur téléphone). */
+header {
+  position: sticky;        /* reste collé en haut quand on fait défiler */
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: var(--nuit);
+}
+
+header a { color: var(--blanc); text-decoration: none; margin-left: 1rem; }
+header .logo { color: var(--corail); font-weight: bold; font-size: 1.3rem; margin-left: 0; }
+
+
+/* 4. LES SECTIONS
+   max-width limite la largeur pour que le texte reste lisible,
+   margin: 0 auto centre le bloc. */
+section {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+
+/* 5. L'ACCUEIL : texte à gauche, étiquette à droite
+   flex: 1 1 20rem = le bloc peut grandir, rétrécir, et mesure 20rem au départ. */
+.accueil { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; }
+.accueil > div { flex: 1 1 20rem; }
+
+/* L'étiquette de prix, clin d'œil à mes boutiques en ligne */
+.tag {
+  background: var(--blanc);
+  border: 3px dashed var(--nuit);
+  box-shadow: 0 6px 0 var(--corail);
+  padding: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0.7rem 1.3rem;
+  background: var(--nuit);
+  color: var(--blanc);
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+
+/* 6. LES CARTES (compétences, chiffres de la veille, captures d'écran)
+   Même principe que l'accueil : des blocs côte à côte qui passent à la ligne. */
+.cartes { display: flex; flex-wrap: wrap; gap: 1rem; }
+
+.carte {
+  flex: 1 1 14rem;
+  padding: 1rem 1.2rem;
+  background: var(--blanc);
+  border-top: 5px solid var(--corail);
+}
+
+.carte strong { display: block; font-size: 2.5rem; }   /* gros chiffres */
+.source { color: var(--gris); font-size: 0.85rem; }
+
+
+/* 7. LE PARCOURS ET LES PROJETS */
+.parcours { list-style: none; padding: 0; }
+.parcours li {
+  margin-bottom: 1.2rem;
+  padding-left: 1rem;
+  border-left: 4px solid var(--corail);   /* trait vertical à gauche */
+}
+
+.meta { color: var(--gris); font-size: 0.95rem; }
+
+.projet {
+  margin-bottom: 1.2rem;
+  padding: 1.2rem;
+  background: var(--blanc);
+  border-left: 6px solid var(--corail);
+}
+
+dt { margin-top: 1rem; font-weight: bold; }   /* titres des listes de description */
+dd { margin-left: 0; }
+
+
+/* 8. LES TABLEAUX
+   La div .tableau permet de faire défiler le tableau sur petit écran. */
+.tableau { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; background: var(--blanc); }
+th, td { padding: 0.6rem; border: 1px solid var(--trait); text-align: left; vertical-align: top; }
+th { background: var(--nuit); color: var(--blanc); }
+
+
+/* 9. DIVERS */
+
+.note { color: var(--gris); }
+
+footer { padding: 1.5rem; text-align: center; color: var(--gris); font-size: 0.9rem; }

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<!-- Ce fichier décrit le CONTENU de la page : titres, textes, images, liens.
+     Le fichier style.css décrit son APPARENCE. -->
+<html lang="fr">
+
+<!-- HEAD : informations pour le navigateur (rien de visible dans la page) -->
+<head>
+  <meta charset="UTF-8"> <!-- permet d'afficher les accents -->
+  <!-- Permet d'adapter la page à la largeur d'un téléphone -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ivan Mattar – Portfolio BTS SIO (SLAM)</title>
+  <meta name="description" content="Portfolio d’Ivan Mattar, étudiant en BTS SIO option SLAM : parcours, réalisations, veille technologique et tableau de synthèse E5.">
+  <!-- Relie la page à la feuille de style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- BODY : tout ce qui s'affiche -->
+<body>
+
+    <!-- EN-TÊTE : le nom et le menu. Chaque lien "#xxx" mène à la section qui a id="xxx" -->
+  <header>
+    <a class="logo" href="#accueil">Ivan Mattar</a>
+    <nav>
+      <a href="#parcours">Parcours</a>
+      <a href="#competences">Compétences</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#veille">Veille</a>
+      <a href="#e5">Tableau E5</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN : le contenu principal, découpé en sections -->
+  <main>
+
+    <!-- ACCUEIL -->
+    <section id="accueil" class="accueil">
+      <div>
+        <h1>Étudiant en BTS SIO, et déjà vendeur en ligne.</h1>
+        <p>
+          Je suis en première année de BTS SIO, option SLAM (développement), au lycée
+          Charles de Foucauld. Depuis deux ans, je vends des vêtements de luxe et de semi-luxe en ligne.
+          J’ai choisi ce BTS pour apprendre à intégrer des chatbots d’IA à mes boutiques.
+          Plus tard, je souhaite travailler dans le commerce international.
+        </p>
+        <a class="btn" href="#realisations">Voir mes réalisations</a>
+      </div>
+
+      <!-- L'étiquette de prix : clin d'œil à mes boutiques en ligne -->
+      <div class="tag">
+        <p><strong>EN STOCK</strong></p>
+        <p>Ivan Mattar<br>BTS SIO · option SLAM</p>
+        <p>Langues : français, anglais, arabe, allemand</p>
+        <p>Disponible pour un stage toute l’année 2027</p>
+      </div>
+    </section>
+
+    <!-- PARCOURS : une liste (ul) dont chaque élément (li) est une étape -->
+    <section id="parcours">
+      <h2>Mon parcours</h2>
+      <ul class="parcours">
+        <li>
+          <h3>BTS SIO, 1<sup>re</sup> année</h3>
+          <p class="meta">Lycée Charles de Foucauld · 2026-2027 (en cours)</p>
+          <p>Je me spécialise vers l’option SLAM : solutions logicielles et applications métiers.</p>
+        </li>
+        <li>
+          <h3>Baccalauréat STMG, spécialité mercatique</h3>
+          <p class="meta">Obtenu en 2026</p>
+          <p>Une formation orientée marketing et commerce, qui nourrit mon projet de vente en ligne.</p>
+        </li>
+        <li>
+          <h3>Mes boutiques en ligne (achat-revente)</h3>
+          <p class="meta">Depuis 2 ans · en parallèle de mes études</p>
+          <p>Je vends des vêtements de luxe et de semi-luxe sur Shopify, Storly et Vinted, et je communique sur Instagram et TikTok. Toutes les tâches de mes boutiques se font depuis Shopify et Storly.</p>
+        </li>
+        <li>
+          <h3>Certification PSC1</h3>
+          <p class="meta">Lycée Charles de Foucauld · octobre 2025</p>
+          <p>Prévention et secours civiques de niveau 1.</p>
+        </li>
+        <li>
+          <h3>Stage : préparateur de cocktails sans alcool</h3>
+          <p class="meta">« Pour vivre heureux, vivons cachés » · mai 2025</p>
+          <p>Préparation des boissons, accueil et conseil des clients, participation au service.</p>
+        </li>
+        <li>
+          <h3>Stage d’observation : Kickback&amp;Facter</h3>
+          <p class="meta">7 au 14 février 2023</p>
+          <p>Classement de dossiers clients, découverte du suivi comptable, participation à des réunions.</p>
+        </li>
+      </ul>
+
+      <h3>Ce que mes stages m’ont appris</h3>
+      <p>J’ai retenu qu’une entreprise fonctionne vraiment grâce à la coordination des salariés et à l’intelligence collective.</p>
+
+      <h3>Mon projet</h3>
+      <p>
+        Je veux savoir intégrer des chatbots d’IA à mes boutiques et être à l’aise avec ces outils
+        pour l’avenir de mes projets. Je souhaite aussi rester polyvalent pour m’adapter à l’évolution de l’IA.
+      </p>
+    </section>
+
+    <!-- COMPÉTENCES : trois cartes côte à côte -->
+    <section id="competences">
+      <h2>Compétences</h2>
+      <div class="cartes">
+        <div class="carte">
+          <h3>Informatique</h3>
+          <p>Python (notions)</p>
+          <p>Word, Excel, PowerPoint</p>
+          <p>Orientation : développement (SLAM)</p>
+        </div>
+        <div class="carte">
+          <h3>Vente en ligne</h3>
+          <p>Shopify, Storly, Vinted</p>
+          <p>Instagram, TikTok</p>
+        </div>
+        <div class="carte">
+          <h3>Qualités</h3>
+          <p>Autonomie, esprit d’équipe, rigueur, organisation, communication, adaptation, dynamisme</p>
+        </div>
+        <div class="carte">
+          <h3>Langues</h3>
+          <p>Français : B2<br>Anglais : C1<br>Arabe : B2<br>Allemand : B1</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RÉALISATIONS : une "article" par projet -->
+    <section id="realisations">
+      <h2>Réalisations</h2>
+
+      <article class="projet">
+        <h3>Veille technologique : l’IA dans les entreprises</h3>
+        <p class="meta">Projet de BTS SIO (AP2) · Google Alertes</p>
+        <dl>
+          <dt>Contexte</dt>
+          <dd>Mission de première année : choisir un sujet de veille, comparer des outils et prouver la mise en place d’un dispositif de suivi.</dd>
+
+          <dt>Ce que j’ai réalisé</dt>
+          <dd>Une comparaison de trois outils, la création d’alertes quotidiennes sur l’IA en entreprise avec captures d’écran, et l’analyse de publications de France Num, de l’INSEE et d’Eurostat.</dd>
+
+          <dt>Difficultés rencontrées</dt>
+          <dd>Cibler les informations utiles, car il y a beaucoup d’informations et des sources très différentes. Pour m’y retrouver, je me suis appuyé sur des sources officielles (France Num, INSEE, Eurostat).</dd>
+
+          <dt>Ce que j’ai appris</dt>
+          <dd>À suivre l’actualité d’un sujet sans refaire les recherches à la main, et à lire des statistiques officielles.</dd>
+
+          <dt>Sources et documentation</dt>
+          <dd><a href="#veille">Le détail de ma veille sur cette page</a> (outils, alertes, captures, journal et sources)</dd>
+        </dl>
+      </article>
+
+      <article class="projet">
+        <h3>Mes boutiques en ligne</h3>
+        <p class="meta">Projet personnel · e-commerce, Shopify, Storly, Vinted</p>
+        <dl>
+          <dt>Contexte</dt>
+          <dd>Depuis deux ans, je vends des vêtements de luxe et de semi-luxe en ligne, sur Shopify, Storly et Vinted. Je fais aussi connaître mes produits sur Instagram et TikTok.</dd>
+
+          <dt>Ce que je fais</dt>
+          <dd>Toutes les tâches de gestion de mes boutiques se font depuis Shopify et Storly.</dd>
+
+          <dt>Lien avec le BTS SIO</dt>
+          <dd>Ces boutiques sont la raison pour laquelle je veux apprendre à coder des sites et à automatiser des tâches avec l’IA.</dd>
+
+          <dt>Sources et documentation</dt>
+          <dd>Documentation et centres d’aide de Shopify et de Storly. Je ne publie pas de captures d’écran de mes boutiques.</dd>
+        </dl>
+      </article>
+
+      <article class="projet">
+        <h3>Projet à venir : un chatbot d’IA pour mes boutiques</h3>
+        <p class="meta">Projet personnel · pas encore réalisé</p>
+        <dl>
+          <dt>Contexte</dt>
+          <dd>C’est la raison pour laquelle j’ai choisi le BTS SIO : savoir intégrer des chatbots d’IA à mes boutiques en ligne.</dd>
+
+          <dt>Objectif</dt>
+          <dd>Apprendre à développer et à intégrer ce type d’outil, pour être à l’aise avec l’IA dans mes futurs projets.</dd>
+        </dl>
+      </article>
+
+      <article class="projet">
+        <h3>Ce portfolio</h3>
+        <p class="meta">Projet personnel · HTML, CSS, GitHub Pages</p>
+        <dl>
+          <dt>Contexte</dt>
+          <dd>Réalisé en AP2 pour présenter mon parcours, mes projets et ma veille, sans utiliser de CMS.</dd>
+
+          <dt>Ce que j’ai réalisé</dt>
+          <dd>Un site statique écrit en HTML et CSS, adapté aux téléphones et hébergé gratuitement sur GitHub Pages.</dd>
+
+          <dt>Sources et documentation</dt>
+          <dd>
+            <a href="https://github.com/Ivan-m/Ivan-m.github.io">Code source du portfolio</a> ·
+            <a href="https://docs.github.com/fr/pages">Documentation GitHub Pages</a>
+          </dd>
+        </dl>
+      </article>
+    </section>
+
+    <!-- VEILLE -->
+    <section id="veille">
+      <h2>Ma veille technologique</h2>
+
+      <h3>Définition et méthode</h3>
+      <p>
+        La veille technologique consiste à rechercher régulièrement des informations sur les nouvelles
+        technologies pour rester informé, découvrir de nouvelles solutions et anticiper les changements.
+        Elle doit être régulière : une recherche faite une seule fois ne suffit pas.
+      </p>
+      <!-- ol = liste numérotée -->
+      <ol>
+        <li>Définir un sujet précis.</li>
+        <li>Rechercher des informations dans des sources adaptées.</li>
+        <li>Collecter régulièrement les nouvelles publications.</li>
+        <li>Trier les résultats.</li>
+        <li>Analyser ce qui est important.</li>
+        <li>Conserver et partager.</li>
+      </ol>
+
+      <h3>Mon sujet : l’intelligence artificielle dans les entreprises</h3>
+      <p>
+        Je surveille les nouveaux outils (ChatGPT, Microsoft Copilot, Google Gemini), leurs usages
+        professionnels (rédaction, assistance client, analyse de données, automatisation) et leurs enjeux
+        (protection des données, fiabilité, coût, impact sur les métiers).
+      </p>
+      <p>
+        J’ai choisi ce sujet parce que l’IA évolue vite et touche de nombreux métiers.
+        Avec mes boutiques en ligne, je veux comprendre comment l’utiliser pour mes projets.
+      </p>
+
+      <h3>Comparaison de trois outils</h3>
+      <div class="tableau">
+        <table>
+          <tr><th>Critère</th><th>Google Alertes</th><th>Feedly</th><th>Inoreader</th></tr>
+          <tr><td>Gratuit</td><td>Oui</td><td>Oui, version limitée</td><td>Oui, version limitée</td></tr>
+          <tr><td>Facilité d’utilisation</td><td>Très simple</td><td>Simple</td><td>Moyenne</td></tr>
+          <tr><td>Alertes par e-mail</td><td>Oui</td><td>Selon les fonctionnalités</td><td>Oui, selon les fonctionnalités</td></tr>
+          <tr><td>Regroupement des sources</td><td>Limité</td><td>Oui</td><td>Oui</td></tr>
+          <tr><td>Classement des articles</td><td>Limité</td><td>Oui</td><td>Oui</td></tr>
+        </table>
+      </div>
+      <p>
+        <strong>Mon choix : Google Alertes.</strong> Il est gratuit, simple à utiliser et envoie les nouveautés
+        par e-mail sans demander de connaissances techniques.
+      </p>
+
+      <h3>Mon dispositif de notification</h3>
+      <p>
+        Google m’envoie un e-mail une fois par jour au maximum, en français et pour la France, dès qu’un
+        nouveau contenu correspond à mes mots-clés. Je n’ai pas à relancer les recherches moi-même.
+      </p>
+      <div class="tableau">
+        <table>
+          <tr><th>Alerte</th><th>Objectif</th></tr>
+          <tr><td>Intelligence artificielle entreprise</td><td>Suivre l’actualité générale de l’IA en entreprise.</td></tr>
+          <tr><td>IA générative professionnelle</td><td>Suivre les nouvelles technologies d’IA générative.</td></tr>
+          <tr><td>ChatGPT entreprise</td><td>Suivre les nouveautés de ChatGPT pour les professionnels.</td></tr>
+        </table>
+      </div>
+
+      <!-- Les captures d'écran : le texte "alt" décrit l'image (utile si elle ne s'affiche pas) -->
+      <div class="cartes">
+        <div class="carte">
+          <img src="images/alertes-liste.png" alt="Google Alertes avec trois alertes actives">
+          <p class="source">Mes trois alertes actives</p>
+        </div>
+        <div class="carte">
+          <img src="images/alerte-configuration.png" alt="Options de l’alerte ChatGPT entreprise : une fois par jour, français, France">
+          <p class="source">Réglages de l’alerte « ChatGPT entreprise »</p>
+        </div>
+        <div class="carte">
+          <img src="images/alerte-email.png" alt="E-mail Google Alertes reçu le 10 novembre 2026">
+          <p class="source">E-mail reçu le 10 novembre 2026</p>
+        </div>
+      </div>
+
+      <h3>Ce que ma veille m’apprend</h3>
+      <div class="cartes">
+        <div class="carte">
+          <strong>26 %</strong>
+          <p>des TPE et PME françaises utilisent l’IA, un chiffre doublé en un an.</p>
+          <p class="source">France Num, baromètre 2025</p>
+        </div>
+        <div class="carte">
+          <strong>18 %</strong>
+          <p>des entreprises en France utilisaient l’IA en 2025, contre 10 % en 2024.</p>
+          <p class="source">INSEE, juillet 2026</p>
+        </div>
+        <div class="carte">
+          <strong>20 %</strong>
+          <p>des entreprises européennes en 2025, contre 13,5 % en 2024.</p>
+          <p class="source">Eurostat, décembre 2025</p>
+        </div>
+        <div class="carte">
+          <strong>28 %</strong>
+          <p>des entreprises qui utilisent l’IA s’en servent pour le marketing et les ventes.</p>
+          <p class="source">INSEE, octobre 2025</p>
+        </div>
+      </div>
+      <p>
+        Je retiens que l’IA progresse partout, que les grandes entreprises ont de l’avance
+        et qu’elle sert aussi à la vente, à la comptabilité et à l’administration.
+      </p>
+
+      <h3>Mon journal de veille</h3>
+      <div class="tableau">
+        <table>
+          <tr><th>Date</th><th>Source</th><th>Ce que j’en retiens</th></tr>
+          <tr>
+            <td>10/11/2026</td>
+            <td>Alerte Google « ChatGPT entreprise » : article « ChatGPT en entreprise : ce que dit vraiment la loi »</td>
+            <td>La Cour d’appel de Paris a confirmé en mai 2026 que déployer ChatGPT sans consulter le CSE expose une entreprise à une suspension judiciaire. Une entreprise doit informer ses représentants avant d’introduire un outil d’IA.</td>
+          </tr>
+          <tr>
+            <td>Nov. 2026</td>
+            <td><a href="https://www.francenum.gouv.fr/">France Num : baromètre 2025</a></td>
+            <td>26 % des TPE et PME utilisent l’IA, surtout l’IA générative (22 %). Les petites entreprises commencent à s’y mettre.</td>
+          </tr>
+          <tr>
+            <td>Nov. 2026</td>
+            <td><a href="https://www.insee.fr/fr/statistiques/9025878">INSEE : l’IA dans les entreprises</a> (juillet 2026)</td>
+            <td>18 % des entreprises utilisaient l’IA en 2025, contre 10 % en 2024. L’écart de taille est fort : 9 % pour 10 à 49 salariés, 58 % pour 250 salariés ou plus.</td>
+          </tr>
+          <tr>
+            <td>Nov. 2026</td>
+            <td><a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251211-2">Eurostat : l’IA dans les entreprises</a> (décembre 2025)</td>
+            <td>La France est à 18,2 % contre 20 % pour l’Europe, loin du Danemark (42 %). Les pays avancent à des vitesses très différentes.</td>
+          </tr>
+          <tr>
+            <td>Nov. 2026</td>
+            <td><a href="https://www.insee.fr/fr/statistiques/8616837">INSEE : les usages de l’IA</a> (octobre 2025)</td>
+            <td>Marketing et ventes (28 %), production (27 %), comptabilité (25 %). L’IA touche plusieurs métiers de l’entreprise.</td>
+          </tr>
+        </table>
+      </div>
+
+      <h3>Mes sources</h3>
+      <ul>
+        <li><a href="https://www.francenum.gouv.fr/">France Num</a> : baromètre sur le numérique des TPE et PME.</li>
+        <li><a href="https://www.insee.fr/">INSEE</a> : statistiques officielles sur les entreprises françaises.</li>
+        <li><a href="https://ec.europa.eu/eurostat">Eurostat</a> : statistiques européennes pour comparer les pays.</li>
+        <li><a href="https://www.google.fr/alerts">Google Alertes</a> : mon outil de notification.</li>
+      </ul>
+      <p class="note">Ce sujet pourra être présenté à l’épreuve E5, et je pourrai le changer en deuxième année.</p>
+    </section>
+
+    <!-- TABLEAU DE SYNTHÈSE E5 -->
+    <section id="e5">
+      <h2>Tableau de synthèse E5</h2>
+      <p>
+        L’épreuve E5 est un oral sur mon parcours de professionnalisation.
+        Ce tableau relie chaque compétence à une preuve de mon portfolio.
+      </p>
+      <p><a class="btn" href="docs/tableau-synthese-E5.pdf">Télécharger le tableau (PDF)</a></p>
+
+      <div class="tableau">
+        <table>
+          <tr><th>Compétence</th><th>Preuve</th></tr>
+          <tr><td>Gérer le patrimoine informatique</td><td>À compléter pendant le stage</td></tr>
+          <tr><td>Répondre aux incidents et aux demandes d’assistance et d’évolution</td><td>À compléter pendant le stage</td></tr>
+          <tr><td>Développer la présence en ligne de l’organisation</td><td><a href="#realisations">Boutiques en ligne, comptes Instagram et TikTok, ce portfolio</a></td></tr>
+          <tr><td>Travailler en mode projet</td><td>À compléter (projet de groupe ou stage)</td></tr>
+          <tr><td>Mettre à disposition des utilisateurs un service informatique</td><td>À compléter pendant le stage</td></tr>
+          <tr><td>Organiser son développement professionnel</td><td><a href="#veille">Veille sur l’IA en entreprise</a>, portfolio, recherche de stage</td></tr>
+          <tr><td>Concevoir et développer une solution applicative (SLAM)</td><td>À compléter pendant l’année</td></tr>
+          <tr><td>Assurer la maintenance d’une solution applicative (SLAM)</td><td>À compléter pendant l’année</td></tr>
+          <tr><td>Gérer les données (SLAM)</td><td>À compléter pendant l’année</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Me contacter</h2>
+      <p>Je recherche un stage pour mettre en pratique mes connaissances et découvrir le travail d’une équipe informatique.</p>
+      <p>Je suis disponible toute l’année 2027.</p>
+      <p>Mes coordonnées figurent sur mon CV, que je transmets avec mes candidatures.</p>
+      <p><a href="https://github.com/Ivan-m">Mon GitHub</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Ivan Mattar · Portfolio réalisé en HTML et CSS</p>
+  </footer>
+
+</body>
+</html>
